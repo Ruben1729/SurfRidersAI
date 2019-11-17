@@ -8,14 +8,10 @@ EPOCHS = 8
 MODELNAME = 'surfrider-{}-{}-{}-epochs'.format(LR, 'alexnet', EPOCHS)
 
 model = alexnet(WIDTH, HEIGHT, LR)
+trainData = np.load('training_data_v2.npy', allow_pickle=True)
 
-np_load_old = np.load
-np.load = lambda *a,**k: np_load_old(*a, allow_pickle=True, **k)
-trainData = np.load('training_data.npy')
-np.load = np_load_old
-
-train = trainData[:-100]
-test = trainData[-100:]
+train = trainData[:-500]
+test = trainData[-500:]
 
 X = np.array([i[0] for i in train]).reshape(-1,WIDTH,HEIGHT,1)
 Y = [i[1] for i in train]

@@ -25,11 +25,11 @@ for data in trainData:
 	img = data[0]
 	choice = data[1]
 
-	if choice == [1,0]:
+	if choice == [1,0,0]:
 		up.append([img, choice])
-	elif choice == [0,1]:
+	elif choice == [0,1,0]:
 		down.append([img, choice])
-	elif choice == [0,0]:
+	elif choice == [0,0,1]:
 		straight.append([img, choice])
 	else:
 		print('No Match.')
