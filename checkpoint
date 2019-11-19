@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\Ruben\\OneDrive\\Desktop\\Github\\SurfRidersAI\\surfrider-0.001-alexnet-8-epochs"
-all_model_checkpoint_paths: "C:\\Users\\Ruben\\OneDrive\\Desktop\\Github\\SurfRidersAI\\surfrider-0.001-alexnet-8-epochs"
+model_checkpoint_path: "C:\\Users\\Ruben\\OneDrive\\Desktop\\Github\\SurfRidersAI\\surfrider-0.001-customnet-8-epochs"
+all_model_checkpoint_paths: "C:\\Users\\Ruben\\OneDrive\\Desktop\\Github\\SurfRidersAI\\surfrider-0.001-customnet-8-epochs"

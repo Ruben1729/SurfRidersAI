@@ -1,13 +1,13 @@
 import numpy as np
-from alexnet import alexnet
+from alexnet import alexnet2, alexnet, customnet
 
 WIDTH = 80
 HEIGHT = 60
 LR = 1e-3
 EPOCHS = 8
-MODELNAME = 'surfrider-{}-{}-{}-epochs'.format(LR, 'alexnet', EPOCHS)
+MODELNAME = 'surfrider-{}-{}-{}-epochs'.format(LR, 'customnet', EPOCHS)
 
-model = alexnet(WIDTH, HEIGHT, LR)
+model = customnet(WIDTH, HEIGHT, LR)
 trainData = np.load('training_data_v2.npy', allow_pickle=True)
 
 train = trainData[:-500]
